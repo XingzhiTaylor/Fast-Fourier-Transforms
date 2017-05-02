@@ -1,2 +1,2 @@
 # Fast-Fourier-Transforms
-Some programs that calculate the DFT of a signal
+This repository stores the C++ and Python programs that calculate the DFT of signals.
