@@ -1,3 +1,5 @@
 # Fast-Fourier-Transforms
 This repository stores the C++ and Python programs that calculate the DFT of signals using a decimation in time algorithm.
 If the length of the signal is not a power of 2, the program will extend the signal and calculate teh DFT. i.e. A signal with length 50 will be extended to have length 64. The signals are extended by padding 0 at the end. This program is to be modified to calculate the DFT without extending the signal.
+
+The fft_new file is a python program that calculates the fft of the signal without changing the length of it. The fft_new program uses a decimation in time algorithm. If the length of the signal N is a composite number, the program decompose the length N into p and q, extract p sub-signals each of length q. Then, the program recursively calculates the DFT of the subsignal, dividing the signal into sub-signals until the length is prime. After calculating the DFT of the p subsignals, the final result is calculated by multiplying each sub-result its own exponential factor and add them up. If the length is prime, then the program calculates the DFT following the definition.
